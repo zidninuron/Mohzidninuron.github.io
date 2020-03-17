@@ -1,0 +1,906 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/zidninuron/Metode%20Eliminasi%20Gauss/">
+      
+      
+        <meta name="author" content="Martin Donath">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Tugas 3 - Material for MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#metode-eliminasi-gauss-jordan" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/zidninuron/" title="Material for MkDocs" aria-label="Material for MkDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Material for MkDocs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Tugas 3
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zidninuron/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Beranda
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/zidninuron/" title="Material for MkDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Material for MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zidninuron/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Beranda" class="md-nav__link">
+      Beranda
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DeretMacLaurin/" title="Tugas 1" class="md-nav__link">
+      Tugas 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../METODE%20NEWTON%20RAPHSON/" title="Tugas 2" class="md-nav__link">
+      Tugas 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 3
+      </label>
+    
+    <a href="./" title="Tugas 3" class="md-nav__link md-nav__link--active">
+      Tugas 3
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dasar-teori" class="md-nav__link">
+    Dasar Teori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contoh" class="md-nav__link">
+    Contoh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program" class="md-nav__link">
+    Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-run" class="md-nav__link">
+    Hasil Run:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dasar-teori" class="md-nav__link">
+    Dasar Teori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contoh" class="md-nav__link">
+    Contoh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program" class="md-nav__link">
+    Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-run" class="md-nav__link">
+    Hasil Run:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h2 id="metode-eliminasi-gauss-jordan"><em><u>**Metode Eliminasi Gauss Jordan*</em></u>*<a class="headerlink" href="#metode-eliminasi-gauss-jordan" title="Permanent link">&para;</a></h2>
+<p>​       Metode Gauss-Jordan merupakan suatu variasi dari Eliminasi Gauss dan dalam bahasa analitik biasanya lebih dikenal dengan nama reduksi baris. Perbedaan utamanya dengan eliminasi Gauss adalah bila sebuah yang tidak diketahui dieliminasikan dengan metode Gauss-Jordan maka ia deliminasikan dari setiap persamaan lainnya. Ini merupakan bentuk matrik kesatuan,padahal eliminasi Gauss merupakan matrik triangular.</p>
+<h5 id="dasar-teori">Dasar Teori<a class="headerlink" href="#dasar-teori" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Penambahan Matrik sebelah kiri diubah menjadi matrik diagonal</li>
+</ol>
+<p><img alt="gambar" src="../gambar.png" /></p>
+<ol>
+<li>
+<p>Penyelesaian dari persamaan linier simultan diatas adalah nilai d1,d2,d3,…,dn dan atau x1 = d1,x2 = d2,x3=d3,….,xn=dn</p>
+</li>
+<li>
+<p>Teknik yang digunakan dalam metode eliminasi Gauss-Jordan ini sama seperti metode eliminasi Gauss yaitu menggunakan OBE (Operasi Baris Elementer). Hanya perhitungan penyelesaian secara langsung diperoleh dari nilai pada kolom terakhir dari setiap baris .</p>
+</li>
+<li>
+<p>Satu cara yang gamblang untuk menghitung inversi ialah dengan menggunakan metode Gauss-Jordan. Untuk melakukan ini,matriks koefisien diperluas dengan sebuah matriks kesatuan. Kemudian metode Gauss Jordan diterapkan agar mengurangi matriks koefisien menjadi sebuah matriks kesatuan. Jika ini telah selesai, ruas kanan matriks yang diperluas akan mengandung inversi</p>
+</li>
+</ol>
+<h5 id="contoh">Contoh<a class="headerlink" href="#contoh" title="Permanent link">&para;</a></h5>
+<p>•Selesaikan sistem persamaan :</p>
+<p><img alt="Picture1" src="../Picture1.png" /></p>
+<p><img alt="Picture2" src="../Picture2.png" /></p>
+<p><img alt="Picture3" src="../Picture3.png" /></p>
+<h5 id="program"><strong>Program</strong><a class="headerlink" href="#program" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#Definisi Matrix</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan ukuran Matrix: &quot;</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">baris</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">a</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Nilai: &quot;</span><span class="p">))</span>
+        <span class="n">baris</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Hasil: &quot;</span><span class="p">))</span>
+    <span class="n">B</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+
+<span class="n">Matrix</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">Hasil</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">Matrix</span><span class="p">)</span>
+
+
+<span class="c1">#Eliminasi Gauss</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">Matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span> <span class="p">:</span>
+            <span class="n">lam</span><span class="o">=</span><span class="n">Matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="n">Matrix</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">Matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">:</span><span class="n">n</span><span class="p">]</span><span class="o">=</span><span class="n">Matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">:</span><span class="n">n</span><span class="p">]</span><span class="o">-</span><span class="p">(</span><span class="n">Matrix</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">:</span><span class="n">n</span><span class="p">]</span><span class="o">*</span><span class="n">lam</span><span class="p">)</span>
+            <span class="n">Hasil</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">Hasil</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="p">(</span><span class="n">Hasil</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">lam</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix A : &quot;</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">Matrix</span><span class="p">)</span>
+
+<span class="c1">#Subtitution</span>
+<span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">Hasil</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Matrix</span><span class="p">[</span><span class="n">m</span><span class="p">,</span> <span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">]))</span><span class="o">/</span><span class="n">Matrix</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nilai X &#39;</span><span class="p">,</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="n">m</span><span class="p">])</span>
+</code></pre></div>
+
+<h5 id="hasil-run"><strong>Hasil Run:</strong><a class="headerlink" href="#hasil-run" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="n">Hasil</span> <span class="mi">1</span><span class="p">:</span>
+<span class="n">Masukkan</span> <span class="n">ukuran</span> <span class="n">Matrix</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">6</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Matrix</span> <span class="n">A</span> <span class="p">:</span>  
+ <span class="p">[[</span> <span class="mf">1.</span>   <span class="mf">1.</span>   <span class="mf">1.</span> <span class="p">]</span>
+ <span class="p">[</span> <span class="mf">0.</span>  <span class="o">-</span><span class="mf">2.</span>   <span class="mf">1.</span> <span class="p">]</span>
+ <span class="p">[</span> <span class="mf">0.</span>   <span class="mf">0.</span>  <span class="o">-</span><span class="mf">3.5</span><span class="p">]]</span>
+<span class="n">Nilai</span> <span class="n">X</span>  <span class="mi">3</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">Nilai</span> <span class="n">X</span>  <span class="mi">2</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">Nilai</span> <span class="n">X</span>  <span class="mi">1</span> <span class="o">=</span> <span class="mf">1.0</span>
+</code></pre></div>
+
+<h1 id="metode-jacobi"><strong><em><u>Metode Jacobi</u></em></strong><a class="headerlink" href="#metode-jacobi" title="Permanent link">&para;</a></h1>
+<p>​   <strong>Metode [Iterasi] Jacobi</strong> merupakan salah satu bidang analisis numerik yang digunakan untuk menyelesaikan permasalahan persamaan linear dan sering dijumpai dalam berbagai disiplin ilmu. Metode Iterasi Jacobi merupakan salah satu metode tak langsung, yaitu bermula dari suatu hampiran penyelesaian awal dan kemudian berusaha memperbaiki hampiran dalam tak berhingga namun langkah konvergen. Metode Iterasi Jacobi ini digunakan untuk menyelesaikan [persamaan linear] berukuran besar dan proporsi koefisien nolnya besar.</p>
+<p>Kalau kita mengubah dalam Sistem Persamaan Linear, maka dapat ditulis sebagai berikut:</p>
+<p>Ax=b</p>
+<p>Kemudian, diketahui bahwa A =D + (L + U), di mana D merupakan matriks diagonal,  L merupakan matriks segitiga bawah, dan U merupakan matriks segitiga atas.</p>
+<p>Kemudian, persamaan di atas dapat diubah menjadi:</p>
+<p>Dx + (L + U)x=b</p>
+<p>Kemudian,</p>
+<p>× = D  ̄ ¹[b-( L + U )×⁽ᵏ⁾] </p>
+<p>Jika ditulis dalam aturan iteratif, maka metode Jacobi dapat ditulis sebagai:</p>
+<p>×⁽ᵏ⁺¹⁾ = D  ̄¹[b-( L + U )×⁽ᵏ⁾]</p>
+<p>di mana k merupakan banyaknya iterasi. Jika ×⁽ᵏ⁾ menyatakan hampiran ke-k penyelesaian SPL, maka ×⁽⁰⁾ adalah hampiran awal.<img alt="Screenshot (62)" src="../Screenshot%20%2862%29.png" /></p>
+<h2 id="algoritme-metode-jacobi">Algoritme Metode Jacobi<a class="headerlink" href="#algoritme-metode-jacobi" title="Permanent link">&para;</a></h2>
+<p>INPUT :</p>
+<p><em>n</em>, A, b, dan hampiran awal <strong>Y</strong>=(y1 y2 y3…yn)T , batas toleransi T, dan maksimum iterasi N</p>
+<p>OUTPUT :</p>
+<p><strong>X</strong>=(x1 x2 x3…xn)T, vektor galat hampiran <em>g</em>, dan <em>H</em> yang merupakan matriks dengan baris vektor-vektor hampiran selama iterasi.</p>
+<ol>
+<li>Set penghitung iterasi k=1</li>
+<li>WHILE <em>k</em> &lt; = <em>N</em> DO<img alt="Screenshot (63)" src="../Screenshot%20%2863%29.png" /></li>
+<li>FOR <em>i</em> = 1,2,3,…,<em>n</em>, Hitung </li>
+<li>SET <em>X</em> = (<em>x*1*x*2*x*3…*x**n</em>)<em>T</em></li>
+<li>IF ||X_Y||&lt;T THEN STOP</li>
+<li>Tambah penghitung iterasi, <em>k</em> = <em>k</em> + 1</li>
+<li>FOR <em>i</em> = 1,2,3,…,<em>n</em>, Set <em>yi=xi</em></li>
+<li>SET Y=(y1 y2 y3…yn)T</li>
+<li>Tulis pesan “Metode gagal setelah N iterasi”</li>
+<li>STOP</li>
+</ol>
+<h5 id="program_1">Program<a class="headerlink" href="#program_1" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">array</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">diag</span><span class="p">,</span> <span class="n">diagflat</span><span class="p">,</span> <span class="n">dot</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">jacobi</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1">#Membuat iniial guess                                                                                                                                                         </span>
+    <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+    <span class="c1">#Membuat vektor dari elemen matrix A                                                                                                                                                                                                                                                                                                                 </span>
+    <span class="n">D</span> <span class="o">=</span> <span class="n">diag</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+    <span class="n">R</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">diagflat</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+
+    <span class="c1">#Iterasi                                                                                                                                                                        </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">dot</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">D</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">Mat1</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">Mat2</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan ukuran Matrix: &quot;</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">baris</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">a</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Nilai: &quot;</span><span class="p">))</span>
+        <span class="n">baris</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">Mat1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Hasil: &quot;</span><span class="p">))</span>
+    <span class="n">Mat2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="n">Mat1</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="n">Mat2</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">Mat1</span><span class="p">)</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="n">sol</span> <span class="o">=</span> <span class="n">jacobi</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="n">guess</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A:&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b:&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x:&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">sol</span><span class="p">)</span>
+</code></pre></div>
+
+<h5 id="hasil-run_1">Hasil Run<a class="headerlink" href="#hasil-run_1" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="n">contoh</span> <span class="mi">1</span><span class="p">:</span>
+<span class="n">Masukkan</span> <span class="n">ukuran</span> <span class="n">Matrix</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">4</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">5</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">7</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">5</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">6</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">20</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">18</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">30</span>
+<span class="n">A</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">7.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">]])</span>
+<span class="n">b</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([</span><span class="mf">20.</span><span class="p">,</span> <span class="mf">18.</span><span class="p">,</span> <span class="mf">30.</span><span class="p">])</span>
+<span class="n">x</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([</span><span class="mf">2.06506309e+10</span><span class="p">,</span> <span class="mf">9.61264713e+09</span><span class="p">,</span> <span class="mf">2.15123264e+10</span><span class="p">])</span>
+
+<span class="n">Cotoh</span> <span class="mi">2</span><span class="p">:</span>
+<span class="n">Masukkan</span> <span class="n">ukuran</span> <span class="n">Matrix</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">6</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Masukkan</span> <span class="n">Nilai</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">Masukkan</span> <span class="n">Hasil</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">A</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">]])</span>
+<span class="n">b</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([</span> <span class="mf">9.</span><span class="p">,</span> <span class="mf">16.</span><span class="p">])</span>
+<span class="n">x</span><span class="p">:</span>
+<span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">3.77826554</span><span class="p">,</span>  <span class="mf">3.45248547</span><span class="p">])</span>
+</code></pre></div>
+
+<h1 id="gauss-seidel"><strong><em><u>Gauss Seidel</u></em></strong><a class="headerlink" href="#gauss-seidel" title="Permanent link">&para;</a></h1>
+<p>​       Eliminasi Gauss seidel adalah metode yang menggunakan proses iterasi hingga diperoleh nilai nilai yang berubah.</p>
+<p>Bilai diketahui peramaan linier simultan:</p>
+<p><img alt="Screenshot (64)" src="../Screenshot%20%2864%29.png" /></p>
+<h5 id="konsep-metode-gauss-seidel">Konsep Metode Gauss Seidel<a class="headerlink" href="#konsep-metode-gauss-seidel" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Hitung nilai xi untuk (i = 1 s/d n)</li>
+</ol>
+<h5 id="_1"><img alt="Screenshot (65)" src="\docs\Screenshot (65).png" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
+<ol>
+<li>proses iterasi dihentikan apabila bila selisih nilai xi (i = 1 s/d n ) dengan nilai xi pada iterasi sebelumnya kurang dari nilai toleransi error yang ditentukan</li>
+</ol>
+<h5 id="algoritma-metode-gauss-seidel">Algoritma metode Gauss Seidel<a class="headerlink" href="#algoritma-metode-gauss-seidel" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Masukkan matrik <strong>A</strong>, dan vektor  <strong>B</strong> beserta ukuranya n.</li>
+<li>tentukan batas maksimum iterasi max_iter</li>
+<li>tentukkan toleransi error.</li>
+<li>tentukan nilai awal dari xi, untuk i =1 s/d n</li>
+<li>simpan xi dalam si, untuk i=1 s/d n</li>
+<li>untuk i=1 s/d n hitung<img alt="Screenshot (66)" src="../Screenshot%20%2866%29.png" /></li>
+<li>iterasi &lt;- iterasi +1</li>
+<li>bila iterasi lebih dari max_iter atau tidak terdapat ei&lt;ϵ untuk i=1 s/d n maka proses dihentikan dari penyelesaianya adalah xi untuk i=1 s/d n. Bila tidak maka ulangi langkah (5).</li>
+</ol>
+<h5 id="contoh_1">contoh<a class="headerlink" href="#contoh_1" title="Permanent link">&para;</a></h5>
+<h5 id="_2"><img src="\Screenshot (67).png" alt="Screenshot (67)" style="zoom:150%;" /><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<h5 id="program_2">Program<a class="headerlink" href="#program_2" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="p">,</span><span class="n">b</span><span class="p">):</span> 
+    <span class="c1">#Mencari Panjang Matrix  </span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>               
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>        
+        <span class="n">d</span> <span class="o">=</span> <span class="n">b</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>                 
+        <span class="c1">#Menghitung xi, yi, zi </span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>    
+            <span class="k">if</span><span class="p">(</span><span class="n">j</span> <span class="o">!=</span> <span class="n">i</span><span class="p">):</span> 
+                <span class="n">d</span><span class="o">-=</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>        
+        <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span> <span class="o">/</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="c1">#Solusi   </span>
+    <span class="k">return</span> <span class="n">x</span>     
+
+<span class="n">m</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Panjang Matrix: &quot;</span><span class="p">))</span>
+<span class="n">a</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">b</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">mat1</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="n">l</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan a&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="p">))</span>
+        <span class="n">mat1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">h</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan Hasil: &quot;</span><span class="p">))</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mat1</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>                           
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>                        
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> 
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>          
+    <span class="n">x</span> <span class="o">=</span> <span class="n">seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> 
+    <span class="c1">#print each time the updated solution </span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                     
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>Masukkan Panjang Matrix: 2
+Masukkan a1,1: 2
+Masukkan a1,2: 4
+Masukkan Hasil: 3
+Masukkan a2,1: 5
+Masukkan a2,2: 3
+Masukkan Hasil: 8
+[0, 0, 0]
+[1.5, 0.16666666666666666, 0]
+[1.1666666666666667, 0.722222222222222, 0]
+[0.055555555555556024, 2.574074074074073, 0]
+[-3.648148148148146, 8.74691358024691, 0]
+[-15.993827160493819, 29.3230452674897, 0]
+[-57.1460905349794, 97.91015089163233, 0]
+[-194.32030178326465, 326.53383630544107, 0]
+[-651.5676726108821, 1088.6127876848036, 0]
+[-2175.725575369607, 3628.8759589493457, 0]
+[-7256.251917898691, 12096.419863164485, 0]
+[-24191.33972632897, 40321.566210548284, 0]
+[-80641.63242109657, 134405.38736849427, 0]
+[-268809.27473698853, 448018.1245616476, 0]
+[-896034.7491232952, 1493393.915205492, 0]
+[-2986786.330410984, 4977979.884018307, 0]
+[-9955958.268036613, 16593266.446727687, 0]
+[-33186531.393455375, 55310888.322425626, 0]
+[-110621775.14485125, 184369627.90808544, 0]
+[-368739254.3161709, 614565426.5269514, 0]
+[-1229130851.5539029, 2048551421.9231713, 0]
+[-4097102842.3463426, 6828504739.910571, 0]
+[-13657009478.321142, 22761682466.535236, 0]
+[-45523364931.57047, 75872274888.61745, 0]
+[-151744549775.7349, 252907582962.22482, 0]
+[-505815165922.94965, 843025276540.916, 0]
+[-1686050553080.332, 2810084255136.553, 0]
+[-5620168510271.606, 9366947517122.01, 0]
+[-18733895034242.52, 31223158390406.863, 0]
+[-62446316780812.23, 104077194634689.7, 0]
+[-208154389269377.9, 346923982115632.5, 0]
+[-693847964231263.5, 1156413273718775.2, 0]
+[-2312826547437549.0, 3854710912395917.5, 0]
+[-7709421824791834.0, 1.2849036374653058e+16, 0]
+[-2.5698072749306116e+16, 4.283012124884353e+16, 0]
+[-8.566024249768706e+16, 1.4276707082947842e+17, 0]
+[-2.8553414165895683e+17, 4.7589023609826144e+17, 0]
+[-9.517804721965229e+17, 1.5863007869942047e+18, 0]
+[-3.1726015739884093e+18, 5.287669289980682e+18, 0]
+[-1.0575338579961364e+19, 1.7625564299935607e+19, 0]
+[-3.5251128599871214e+19, 5.875188099978536e+19, 0]
+[-1.1750376199957071e+20, 1.9583960333261786e+20, 0]
+[-3.916792066652357e+20, 6.527986777753928e+20, 0]
+[-1.3055973555507857e+21, 2.1759955925846427e+21, 0]
+[-4.3519911851692854e+21, 7.253318641948809e+21, 0]
+[-1.4506637283897618e+22, 2.417772880649603e+22, 0]
+[-4.835545761299206e+22, 8.059242935498677e+22, 0]
+[-1.6118485870997353e+23, 2.6864143118328925e+23, 0]
+[-5.372828623665785e+23, 8.954714372776308e+23, 0]
+[-1.7909428745552617e+24, 2.984904790925436e+24, 0]
+[-5.969809581850872e+24, 9.94968263641812e+24, 0]
+[-1.989936527283624e+25, 3.3165608788060404e+25, 0]
+[-6.633121757612081e+25, 1.1055202929353469e+26, 0]
+[-2.2110405858706938e+26, 3.685067643117823e+26, 0]
+[-7.370135286235646e+26, 1.2283558810392744e+27, 0]
+[-2.4567117620785488e+27, 4.094519603464248e+27, 0]
+[-8.189039206928496e+27, 1.364839867821416e+28, 0]
+[-2.729679735642832e+28, 4.549466226071387e+28, 0]
+[-9.098932452142774e+28, 1.5164887420237957e+29, 0]
+[-3.0329774840475915e+29, 5.054962473412652e+29, 0]
+[-1.0109924946825304e+30, 1.6849874911375506e+30, 0]
+[-3.3699749822751013e+30, 5.616624970458502e+30, 0]
+[-1.1233249940917004e+31, 1.8722083234861674e+31, 0]
+[-3.7444166469723348e+31, 6.240694411620558e+31, 0]
+[-1.2481388823241117e+32, 2.0802314705401862e+32, 0]
+[-4.1604629410803725e+32, 6.934104901800621e+32, 0]
+[-1.3868209803601242e+33, 2.311368300600207e+33, 0]
+[-4.622736601200414e+33, 7.704561002000691e+33, 0]
+[-1.5409122004001381e+34, 2.568187000666897e+34, 0]
+[-5.136374001333794e+34, 8.560623335556324e+34, 0]
+[-1.712124667111265e+35, 2.853541111852108e+35, 0]
+[-5.707082223704216e+35, 9.511803706173693e+35, 0]
+[-1.9023607412347386e+36, 3.170601235391231e+36, 0]
+[-6.341202470782462e+36, 1.0568670784637437e+37, 0]
+[-2.1137341569274874e+37, 3.5228902615458124e+37, 0]
+[-7.045780523091625e+37, 1.1742967538486043e+38, 0]
+[-2.3485935076972086e+38, 3.914322512828681e+38, 0]
+[-7.828645025657362e+38, 1.3047741709428937e+39, 0]
+[-2.6095483418857873e+39, 4.349247236476312e+39, 0]
+[-8.698494472952624e+39, 1.4497490788254373e+40, 0]
+[-2.8994981576508745e+40, 4.832496929418125e+40, 0]
+[-9.66499385883625e+40, 1.6108323098060416e+41, 0]
+[-3.221664619612083e+41, 5.369441032686805e+41, 0]
+[-1.073888206537361e+42, 1.789813677562268e+42, 0]
+[-3.579627355124536e+42, 5.966045591874227e+42, 0]
+[-1.1932091183748453e+43, 1.9886818639580756e+43, 0]
+[-3.977363727916151e+43, 6.628939546526918e+43, 0]
+[-1.3257879093053837e+44, 2.209646515508973e+44, 0]
+[-4.419293031017946e+44, 7.365488385029909e+44, 0]
+[-1.4730976770059818e+45, 2.4551627950099695e+45, 0]
+[-4.910325590019939e+45, 8.183875983366565e+45, 0]
+[-1.636775196673313e+46, 2.727958661122189e+46, 0]
+[-5.455917322244377e+46, 9.093195537073962e+46, 0]
+[-1.8186391074147924e+47, 3.0310651790246545e+47, 0]
+[-6.062130358049309e+47, 1.0103550596748849e+48, 0]
+[-2.0207101193497698e+48, 3.3678501989162833e+48, 0]
+[-6.735700397832567e+48, 1.1226167329720944e+49, 0]
+[-2.245233465944189e+49, 3.742055776573648e+49, 0]
+[-7.484111553147296e+49, 1.2473519255245493e+50, 0]
+[-2.4947038510490986e+50, 4.1578397517484975e+50, 0]
+[-8.315679503496995e+50, 1.385946583916166e+51, 0]
+&gt;&gt;&gt; 
+</code></pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../METODE%20NEWTON%20RAPHSON/" title="Tugas 2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tugas 2
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2020 Martin Donath
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://struct.cc" target="_blank" rel="noopener" title="globe" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/squidfunk" target="_blank" rel="noopener" title="github-alt" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/squidfunk/" target="_blank" rel="noopener" title="linkedin" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
