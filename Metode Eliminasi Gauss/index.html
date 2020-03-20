@@ -564,12 +564,12 @@
 <p>INPUT :</p>
 <p><em>n</em>, A, b, dan hampiran awal <strong>Y</strong>=(y1 y2 y3…yn)T , batas toleransi T, dan maksimum iterasi N</p>
 <p>OUTPUT :</p>
-<p><strong>X</strong>=(x1 x2 x3…xn)T, vektor galat hampiran <em>g</em>, dan <em>H</em> yang merupakan matriks dengan baris vektor-vektor hampiran selama iterasi.</p>
+<p>ꓫ=(x₁ x₂ x₃……xn)ᵀ, vektor galat hampiran <em>g</em>, dan <em>H</em> yang merupakan matriks dengan baris vektor-vektor hampiran selama iterasi.</p>
 <ol>
 <li>Set penghitung iterasi k=1</li>
 <li>WHILE <em>k</em> &lt; = <em>N</em> DO<img alt="Screenshot (63)" src="../Screenshot%20%2863%29.png" /></li>
 <li>FOR <em>i</em> = 1,2,3,…,<em>n</em>, Hitung </li>
-<li>SET <em>X</em> = (<em>x*1*x*2*x*3…*x**n</em>)<em>T</em></li>
+<li>SET ꓫ=(x₁ x₂ x₃……xn)ᵀ</li>
 <li>IF ||X_Y||&lt;T THEN STOP</li>
 <li>Tambah penghitung iterasi, <em>k</em> = <em>k</em> + 1</li>
 <li>FOR <em>i</em> = 1,2,3,…,<em>n</em>, Set <em>yi=xi</em></li>
@@ -692,7 +692,8 @@
 <li>bila iterasi lebih dari max_iter atau tidak terdapat ei&lt;ϵ untuk i=1 s/d n maka proses dihentikan dari penyelesaianya adalah xi untuk i=1 s/d n. Bila tidak maka ulangi langkah (5).</li>
 </ol>
 <h5 id="contoh_1">contoh<a class="headerlink" href="#contoh_1" title="Permanent link">&para;</a></h5>
-<h5 id="_2"><img src="\Screenshot (67).png" alt="Screenshot (67)" style="zoom:150%;" /><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<h5 id="_2"><img alt="Screenshot (67)" src="../Screenshot%20%2867%29.png" /><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<h5 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
 <h5 id="program_2">Program<a class="headerlink" href="#program_2" title="Permanent link">&para;</a></h5>
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="p">,</span><span class="n">b</span><span class="p">):</span> 
     <span class="c1">#Mencari Panjang Matrix  </span>
@@ -839,16 +840,24 @@ Masukkan Hasil: 8
 &gt;&gt;&gt; 
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="p">&gt;</span>
-    <span class="nx">Mathjax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-    <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inLineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span><span class="s1">&#39;$$&#39;</span><span class="p">]]}</span>
-    <span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<div class="codehilite"><pre><span></span><code>
 </code></pre></div>
 
 <div class="codehilite"><pre><span></span><code>&lt;script type=&quot;text/javascript&quot; async src=&quot;https://cdn.mathjax.org/mathjax/latest/Mathjax.js?config=TeX-MML-AM_CHTML&quot;&gt;
 &lt;/script&gt;
 </code></pre></div>
+
+<script type="text/x-mathjax-config">
+    Mathjax.Hub.Config({
+    tex2jax: {inLineMath: [['$$','$$']]}
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    Mathjax.Hub.Config({
+    tex2jax: {inLineMath: [['$$','$$']]}
+    });
+</script>
                 
                   
                 
