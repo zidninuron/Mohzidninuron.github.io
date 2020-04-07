@@ -13,7 +13,7 @@
         <meta name="description" content="A Material Design theme for MkDocs">
       
       
-        <link rel="canonical" href="https://github.com/zidninuron/METODE%20NEWTON%20RAPHSON/">
+        <link rel="canonical" href="https://github.com/zidninuron/Richardson%20Extrapolation/">
       
       
         <meta name="author" content="Martin Donath">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Tugas 2 - Material for MkDocs</title>
+        <title>Tugas 5 - Material for MkDocs</title>
       
     
     
@@ -116,7 +116,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#metode-newton-raphson" tabindex="0" class="md-skip">
+      <a href="#richardson-extrapolation" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Tugas 2
+                Tugas 5
               
             </span>
           
@@ -305,69 +305,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 2
-      </label>
-    
-    <a href="./" title="Tugas 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../METODE%20NEWTON%20RAPHSON/" title="Tugas 2" class="md-nav__link">
       Tugas 2
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#algoritma" class="md-nav__link">
-    Algoritma
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#permasalahan" class="md-nav__link">
-    Permasalahan
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contoh-program" class="md-nav__link">
-    Contoh Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -399,11 +341,56 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Richardson%20Extrapolation/" title="Tugas 5" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 5
+      </label>
+    
+    <a href="./" title="Tugas 5" class="md-nav__link md-nav__link--active">
       Tugas 5
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contoh" class="md-nav__link">
+    Contoh :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solusi" class="md-nav__link">
+    Solusi
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -428,29 +415,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algoritma" class="md-nav__link">
-    Algoritma
+  <a href="#contoh" class="md-nav__link">
+    Contoh :
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#permasalahan" class="md-nav__link">
-    Permasalahan
+  <a href="#solusi" class="md-nav__link">
+    Solusi
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contoh-program" class="md-nav__link">
-    Contoh Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -471,103 +445,102 @@
               
                 
                 
-                <h1 id="metode-newton-raphson"><strong><em><u>METODE NEWTON RAPHSON</u></em></strong><a class="headerlink" href="#metode-newton-raphson" title="Permanent link">&para;</a></h1>
-<p>​       Metode Newton Raphson adalah metode pendekatan yang menggunakan satu titik awal dan mendekatinya dengan memperhatikan slope atau gradien pada titik tersebut. Titik pendekatan ke n+1 dituliskan dengan : <img alt="Screenshot (53)" src="../Screenshot%20%2853%29.png" /></p>
-<h6 id="algoritma">Algoritma<a class="headerlink" href="#algoritma" title="Permanent link">&para;</a></h6>
-<p>1.Definisikan fungsi f(x) dan f1(x)</p>
-<p>2.Tentukan toleransi error (e) dan iterasi maksimum(n)</p>
-<p>3.Tentukan nilai pendekatan awal x0</p>
-<p>4.Hitung f(x0) dan f1(x0)</p>
-<p>5.Untuk iterasi 1=1 s/d n atau |f(xi) e&gt;=</p>
-<p><img alt="Screenshot (53)" src="../Screenshot%20%2853%29.png" /></p>
-<p>Hitung f(xi) dan f1(xi)</p>
-<ol>
-<li>Akar perasmaan adalah nilai xi yang terakhir diperoleh.</li>
-</ol>
-<h5 id="permasalahan">Permasalahan<a class="headerlink" href="#permasalahan" title="Permanent link">&para;</a></h5>
-<p>Permasalahan pada pemakaian metode Newton Raphson adalah : </p>
-<ol>
-<li>Metode ini tidak dapat digunakan ketika titik pendekatannya berada pada titik ekstrim atau titik puncak, karena pada titik ini nilai F^1 (x) = 0 sehingga nilai penyebut dari f(x)/f^1(x) sama dengan nol, secara grafis dapat dilihat sebagai berikut: </li>
-</ol>
-<p><img alt="Screenshot (54)" src="../Screenshot%20%2854%29.png" /></p>
-<p>Bila titik pendekatan berada pada titik puncak, maka titik selanjutnya akan berada di tak berhingga. </p>
-<ol>
-<li>Metode ini menjadi sulit atau lama mendapatkan penyelesaian ketika titik pendekatannya berada di antara dua titik stasioner. <img alt="Screenshot (55)" src="../Screenshot%20%2855%29.png" /></li>
-</ol>
-<p>​        Bila titik pendekatan berada pada dua tiitik puncak akan dapat mengakibatkan hilangnya penyelesaian (divergensi). Hal ini disebabkan titik selanjutnya berada pada salah satu titik puncak atau arah pendekatannya berbeda. Untuk dapat menyelesaikan kedua permasalahan pada metode Newton Raphson ini, maka metode Newton Raphson perlu dimodifikasi dengan : </p>
-<ol>
-<li>Bila titik pendekatan berada pada titik puncak maka titik pendekatan tersebut harus di geser sedikit,  <img alt="Screenshot (56)" src="../Screenshot%20%2856%29.png" />dimana δadalah konstanta yang ditentukan dengan demikian<img alt="Screenshot (57)" src="../Screenshot%20%2857%29.png" /> dan metode Newton Raphson tetap dapat berjalan</li>
-<li>Untuk menghindari titik-titik pendekatan yang berada jauh, sebaiknya pemakaian metode Newton Raphson ini didahului oleh metode tabel, sehingga dapat di jamin konvergensi dari metode Newton Raphson.</li>
-</ol>
-<h6 id="contoh-program">Contoh Program<a class="headerlink" href="#contoh-program" title="Permanent link">&para;</a></h6>
-<p>Program python untuk memperkirakan akar polinomial:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">#import math - untuk mengambil library matematika</span>
-<span class="c1">#Program python untuk memperkirakan akar polinomial</span>
-
-<span class="c1">#menggunakan metode newton-raphson</span>
-<span class="kn">import</span> <span class="nn">math</span>
-
-<span class="c1">#f(x) -  fungsi polynomial </span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">function</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">function</span>
-
-<span class="c1">#berfungsi untuk menemukan turunan dari polinomial</span>
-<span class="k">def</span> <span class="nf">derivative</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> 
-    <span class="n">h</span> <span class="o">=</span> <span class="mf">0.000001</span>
-    <span class="n">derivative</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">h</span>
-    <span class="k">return</span> <span class="n">derivative</span>
-
-<span class="k">def</span> <span class="nf">newton_raphson</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">derivative</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
-
-
-<span class="c1"># p - titik awal mis. nilai lebih dekat ke root</span>
-<span class="c1"># n - jmulah iterasi</span>
-
-<span class="k">def</span> <span class="nf">iterate</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak Iterasinya =&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">p</span>
+                <h1 id="richardson-extrapolation">Richardson Extrapolation<a class="headerlink" href="#richardson-extrapolation" title="Permanent link">&para;</a></h1>
+<p>Dalam analisis numerik, Richardson Extrapolation adalah metode percepatan urutan, yang digunakan untuk meningkatkan laju konvergensi suatu urutan.</p>
+<p>Richardson Extrapolation termasuk integrasi Romberg, yang menerapkan ekstrapolasi Richardson pada aturan trapesium, dan algoritma Bulirsch-Stoer untuk menyelesaikan persamaan diferensial biasa.</p>
+<p>Beda terpusat (Central Difference):</p>
+<p><img alt="Screenshot (96)" src="../Screenshot%20%2896%29.png" /></p>
+<p>Dapat kita mendapat formula terbaik ?</p>
+<p>Ditetapkan f (x) dan x tertentu:</p>
+<p><img alt="Screenshot (97)" src="../Screenshot%20%2897%29.png" /></p>
+<h4 id="contoh">Contoh :<a class="headerlink" href="#contoh" title="Permanent link">&para;</a></h4>
+<p>• Gunakan fungsi:
+$$
+f(x)=−0.1x<sup>4−0.15x</sup>3−0.5x^2−0.25x+1.2
+$$
+ Mulai dari h1=0.5 dan h2=0.25 hitung estimasi dengan f'(0.5) menggunakan richardson Extrapolation</p>
+<p>• nilai sesungguhnya f'(0.5)=−0.9125</p>
+<h4 id="solusi">Solusi<a class="headerlink" href="#solusi" title="Permanent link">&para;</a></h4>
+<p>Turunan pertama dapat dihitung dengan beda terpusat ( centered differences) yaitu:</p>
+<p><img alt="Screenshot (98)" src="../Screenshot%20%2898%29.png" /></p>
+<p>Estimasi dapat di perbaiki dengan menggunakan :</p>
+<p><img alt="Screenshot (99)" src="../Screenshot%20%2899%29.png" /></p>
+<p>yang menghasilkan nilai yang sama</p>
+<h1 id="tabel-richardson-extrapolation">Tabel Richardson Extrapolation<a class="headerlink" href="#tabel-richardson-extrapolation" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>D(0,0) = Ø (h)</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D(1,0) =Ø(h/2)</td>
+<td>D(11)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D(2,0)=Ø(h/4)</td>
+<td>D(2,1)</td>
+<td>D(2,2)</td>
+<td></td>
+</tr>
+<tr>
+<td>D(3,0)=Ø(h/8)</td>
+<td>D(3,1)</td>
+<td>D(3,2)</td>
+<td>D(3,3)</td>
+</tr>
+</tbody>
+</table>
+<h5 id="program">Program<a class="headerlink" href="#program" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">nol</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span> <span class="c1"># matrik nol untuk lokasi awal</span>
+    <span class="n">Z</span><span class="o">=</span><span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">newton_raphson</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;iterasi ke-&quot;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>         
-    <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">Z</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Z</span>
 
-<span class="c1">#cetakan akar polinomial x ^ 3 - 2x - 1 menggunakan 20 iterasi dan ambil titik awal sebagai 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iterate</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>      
+<span class="k">def</span> <span class="nf">D</span><span class="p">(</span><span class="n">fungsi</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>    <span class="c1"># pergbedaan terbatas terpusat dengan ukuran langkah h pada x=a</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">fungsi</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">-</span><span class="n">fungsi</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">h</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Richardson_dif</span><span class="p">(</span><span class="n">fung</span><span class="p">,</span><span class="n">a</span><span class="p">):</span> 
+    <span class="sd">&#39;&#39;&#39;Metode extrapolasi Richartdson untuk menghitung numerik turunan pertama &#39;&#39;&#39;</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">9</span> <span class="c1"># Kamnu dapat merubah rutan aproksimasi tetapi usahakan dibawah 10 untuk menghindari kesalahan pembulatan.</span>
+    <span class="n">L</span><span class="o">=</span><span class="n">nol</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">I</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="n">L</span><span class="p">[</span><span class="n">I</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">D</span><span class="p">(</span><span class="n">fung</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">I</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">j</span><span class="p">):</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">))</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;diferensiasi numerik dari Funsi 1=-0.1*x**4-0.15*x**3-0.5*x**2-0.25*x+1.2 at x=0.5&#39;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;diff(2**cos(pi+sin(x)) at x=pi/2 is equal to = </span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code>Banyak Iterasinya = 20
-iterasi ke- 0 = 2.999994000093219
-iterasi ke- 1 = 2.199996832141079
-iterasi ke- 2 = 1.7808294919560141
-iterasi ke- 3 = 1.6363030634057565
-iterasi ke- 4 = 1.618304588651506
-iterasi ke- 5 = 1.6180340496697716
-iterasi ke- 6 = 1.6180339887499484
-iterasi ke- 7 = 1.6180339887498947
-iterasi ke- 8 = 1.618033988749895
-iterasi ke- 9 = 1.618033988749895
-iterasi ke- 10 = 1.618033988749895
-iterasi ke- 11 = 1.618033988749895
-iterasi ke- 12 = 1.618033988749895
-iterasi ke- 13 = 1.618033988749895
-iterasi ke- 14 = 1.618033988749895
-iterasi ke- 15 = 1.618033988749895
-iterasi ke- 16 = 1.618033988749895
-iterasi ke- 17 = 1.618033988749895
-iterasi ke- 18 = 1.618033988749895
-iterasi ke- 19 = 1.618033988749895
+<h5 id="hasil-run">Hasil Run:<a class="headerlink" href="#hasil-run" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code> <span class="n">RESTART</span><span class="p">:</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Nuron</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python37</span>\<span class="n">Richardson</span><span class="o">.</span><span class="n">py</span> 
+<span class="n">diferensiasi</span> <span class="n">numerik</span> <span class="n">dari</span> <span class="n">Funsi</span> <span class="mi">1</span><span class="o">=-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="n">at</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span>
 
-&gt;&gt;&gt; 
+ <span class="n">Hasil</span>  <span class="n">dari</span> <span class="n">fungsi</span> <span class="n">di</span> <span class="n">atas</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.91250000000000530687</span>
+
+<span class="n">diff</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="n">at</span> <span class="n">x</span><span class="o">=</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span> <span class="ow">is</span> <span class="n">equal</span> <span class="n">to</span> <span class="o">=</span> <span class="mf">0.16849558398154249050</span>
+<span class="o">&gt;&gt;&gt;</span> 
 </code></pre></div>
 
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {inlineMath: [['$$','$$']]}
-});</script>
+    Mathjax.Hub.Config({
+    tex2jax: {inLineMath: [['$$','$$']]}});</script>
 
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/Mathjax.js?config=TeX-MML-AM_CHTML"></script>
                 
                   
                 
@@ -589,7 +562,7 @@ tex2jax: {inlineMath: [['$$','$$']]}
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../DeretMacLaurin/" title="Tugas 1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Metode%20Rekursif%20Trapezoid/" title="Tugas 4" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -598,25 +571,11 @@ tex2jax: {inlineMath: [['$$','$$']]}
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tugas 1
+                Tugas 4
               </span>
             </div>
           </a>
         
-        
-          <a href="../Metode%20Eliminasi%20Gauss/" title="Tugas 3" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Tugas 3
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
