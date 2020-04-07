@@ -69,6 +69,8 @@
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     
       
         
@@ -471,9 +473,9 @@
               
                 
                 
-                <h1 id="metode-newton-raphson"><strong><em><u>METODE NEWTON RAPHSON</u></em></strong><a class="headerlink" href="#metode-newton-raphson" title="Permanent link">&para;</a></h1>
+                <h1 id="metode-newton-raphson"><strong><em><u>METODE NEWTON RAPHSON</u></em></strong></h1>
 <p>​       Metode Newton Raphson adalah metode pendekatan yang menggunakan satu titik awal dan mendekatinya dengan memperhatikan slope atau gradien pada titik tersebut. Titik pendekatan ke n+1 dituliskan dengan : <img alt="Screenshot (53)" src="../Screenshot%20%2853%29.png" /></p>
-<h6 id="algoritma">Algoritma<a class="headerlink" href="#algoritma" title="Permanent link">&para;</a></h6>
+<h6 id="algoritma">Algoritma</h6>
 <p>1.Definisikan fungsi f(x) dan f1(x)</p>
 <p>2.Tentukan toleransi error (e) dan iterasi maksimum(n)</p>
 <p>3.Tentukan nilai pendekatan awal x0</p>
@@ -484,7 +486,7 @@
 <ol>
 <li>Akar perasmaan adalah nilai xi yang terakhir diperoleh.</li>
 </ol>
-<h5 id="permasalahan">Permasalahan<a class="headerlink" href="#permasalahan" title="Permanent link">&para;</a></h5>
+<h5 id="permasalahan">Permasalahan</h5>
 <p>Permasalahan pada pemakaian metode Newton Raphson adalah : </p>
 <ol>
 <li>Metode ini tidak dapat digunakan ketika titik pendekatannya berada pada titik ekstrim atau titik puncak, karena pada titik ini nilai F^1 (x) = 0 sehingga nilai penyebut dari f(x)/f^1(x) sama dengan nol, secara grafis dapat dilihat sebagai berikut: </li>
@@ -499,7 +501,7 @@
 <li>Bila titik pendekatan berada pada titik puncak maka titik pendekatan tersebut harus di geser sedikit,  <img alt="Screenshot (56)" src="../Screenshot%20%2856%29.png" />dimana δadalah konstanta yang ditentukan dengan demikian<img alt="Screenshot (57)" src="../Screenshot%20%2857%29.png" /> dan metode Newton Raphson tetap dapat berjalan</li>
 <li>Untuk menghindari titik-titik pendekatan yang berada jauh, sebaiknya pemakaian metode Newton Raphson ini didahului oleh metode tabel, sehingga dapat di jamin konvergensi dari metode Newton Raphson.</li>
 </ol>
-<h6 id="contoh-program">Contoh Program<a class="headerlink" href="#contoh-program" title="Permanent link">&para;</a></h6>
+<h6 id="contoh-program">Contoh Program</h6>
 <p>Program python untuk memperkirakan akar polinomial:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1">#import math - untuk mengambil library matematika</span>
 <span class="c1">#Program python untuk memperkirakan akar polinomial</span>
@@ -537,30 +539,32 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">iterate</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>      
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code>Banyak Iterasinya = 20
-iterasi ke- 0 = 2.999994000093219
-iterasi ke- 1 = 2.199996832141079
-iterasi ke- 2 = 1.7808294919560141
-iterasi ke- 3 = 1.6363030634057565
-iterasi ke- 4 = 1.618304588651506
-iterasi ke- 5 = 1.6180340496697716
-iterasi ke- 6 = 1.6180339887499484
-iterasi ke- 7 = 1.6180339887498947
-iterasi ke- 8 = 1.618033988749895
-iterasi ke- 9 = 1.618033988749895
-iterasi ke- 10 = 1.618033988749895
-iterasi ke- 11 = 1.618033988749895
-iterasi ke- 12 = 1.618033988749895
-iterasi ke- 13 = 1.618033988749895
-iterasi ke- 14 = 1.618033988749895
-iterasi ke- 15 = 1.618033988749895
-iterasi ke- 16 = 1.618033988749895
-iterasi ke- 17 = 1.618033988749895
-iterasi ke- 18 = 1.618033988749895
-iterasi ke- 19 = 1.618033988749895
 
-&gt;&gt;&gt; 
+<div class="codehilite"><pre><span></span><code><span class="n">Banyak</span> <span class="n">Iterasinya</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">0</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">999994000093219</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">199996832141079</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">7808294919560141</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">3</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">6363030634057565</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">4</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618304588651506</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">5</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">6180340496697716</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">6</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">6180339887499484</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">7</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">6180339887498947</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">8</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">9</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">10</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">11</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">12</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">13</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">14</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">15</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">16</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">17</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">18</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+<span class="n">iterasi</span> <span class="n">ke</span><span class="o">-</span> <span class="mi">19</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">618033988749895</span>
+
+<span class="o">&gt;&gt;&gt;</span> 
 </code></pre></div>
+
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -658,6 +662,10 @@ tex2jax: {inlineMath: [['$$','$$']]}
       <script src="../assets/javascripts/application.c33a9706.js"></script>
       
       <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
   </body>

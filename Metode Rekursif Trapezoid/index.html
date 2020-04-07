@@ -69,6 +69,8 @@
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     
       
         
@@ -473,12 +475,12 @@
               
                 
                 
-                <h1 id="metode-rekursif-trapezoid"><strong><em><u>Metode Rekursif Trapezoid</u></em></strong><a class="headerlink" href="#metode-rekursif-trapezoid" title="Permanent link">&para;</a></h1>
+                <h1 id="metode-rekursif-trapezoid"><strong><em><u>Metode Rekursif Trapezoid</u></em></strong></h1>
 <p>Metode rekursif trapezoid merupakan suatu metode pengintegralan dalam analisis numerik.di dalam Kalkulus, integral tentu didefinisikan sebagai sebuah limit jumlah Riemann.Selanjutnya,menurut Teorema Dasar Kalkulus integral tersebut dapat dihitung dengan rumus,<img alt="Screenshot (68)" src="../Screenshot%20%2868%29.png" /></p>
 <p>Dengan <em>F(x)</em> adalah antiderivatif  <em>f(x)</em> (yakni <em>F’(x)=f(x)</em>).</p>
-<p>​   Banyak integral tentu yang dapat dihitung dengan rumus tesebut, namun demikian, tidak sedikit integral tentu yang tidak dapat dihitung dengan rumus di atas, hal itu dikarenakan integran *f(x)*tidak mempunyai antiderivatif yang dapat dinyatakan dalam fungsi-fungsi elementer. Dalam hal ini perhitungan yang dapat dilakukan adalah secara numerik.</p>
+<p>​   Banyak integral tentu yang dapat dihitung dengan rumus tesebut, namun demikian, tidak sedikit integral tentu yang tidak dapat dihitung dengan rumus di atas, hal itu dikarenakan integran <em>f(x)</em>tidak mempunyai antiderivatif yang dapat dinyatakan dalam fungsi-fungsi elementer. Dalam hal ini perhitungan yang dapat dilakukan adalah secara numerik.</p>
 <p>​   Integrasi numerik merupakan suatu alat utama yang digunakan para ilmuwan untuk mendapatkan nilai-nilai hampiran untuk integral tentu yang tidak dapat diselesaikan secara analitik. Dalam mendapatkan nilai-nilai hampiran integral tentu, digunakan banyak metode, salah satu metode yang dapat digunakan adalah Aturan Trapesium Rekursif. Berikut akan dijelaskan penghitungan integral tentu menggunakan Aturan Trapesium Rekursif.</p>
-<h5 id="aturan-metode-rekursif-trapezoid">Aturan Metode Rekursif Trapezoid<a class="headerlink" href="#aturan-metode-rekursif-trapezoid" title="Permanent link">&para;</a></h5>
+<h5 id="aturan-metode-rekursif-trapezoid">Aturan Metode Rekursif Trapezoid</h5>
 <p>Misalkan  <strong>f</strong> adalah suatu fungsi yang terdefinisi pada  <strong>[a,b]</strong> . Misalkan <img alt="Screenshot (70)" src="../Screenshot%20%2870%29.png" /> suatu partisi sedemikian sehingga dengan <strong>xk = xo +kh</strong> dengan <strong>h= (b - a)/n</strong> untuk <strong>k=0,1,2,3,...n</strong>. Perhatikan aturan trapesium untuk fungsi  <strong>f</strong> terhadap partisi di atas (untuk keperluan pembahasan pada bagian ini, kita gunakan notasi kuadratur dengan menyertakan cacah dan lebar subinterval),<img alt="Screenshot (71)" src="../Screenshot%20%2871%29.png" /></p>
 <p>Jika lebar setiap subinterval diperkecil separonya, maka didapat</p>
 <p><img alt="Screenshot (72)" src="../Screenshot%20%2872%29.png" /></p>
@@ -521,11 +523,11 @@ T_{k}=T_{2^{k}}(f,{\frac {h}{2^{k}}}),  k=1,2,3,...
 <p>yang memenuhi hubungan</p>
 <p><img alt="Screenshot (73)" src="../Screenshot%20%2873%29.png" /></p>
 <p>dengan <img alt="Screenshot (74)" src="../Screenshot%20%2874%29.png" /></p>
-<h5 id="langkang-langkah-metode-rekursif-trapezoid">Langkang-langkah Metode Rekursif Trapezoid<a class="headerlink" href="#langkang-langkah-metode-rekursif-trapezoid" title="Permanent link">&para;</a></h5>
+<h5 id="langkang-langkah-metode-rekursif-trapezoid">Langkang-langkah Metode Rekursif Trapezoid</h5>
 <p>Dalam menghitung hampiran </p>
 <p><img alt="img" src="/clip_image002.png" /></p>
 <p>dengan aturan trapesium rekursif, kita lakukan langkah-langkah sebagai berikut;<img alt="Screenshot (75)" src="../Screenshot%20%2875%29.png" /></p>
-<h5 id="program">Program<a class="headerlink" href="#program" title="Permanent link">&para;</a></h5>
+<h5 id="program">Program</h5>
 <div class="codehilite"><pre><span></span><code><span class="c1">#mendefinisikan fungsi</span>
 <span class="k">def</span> <span class="nf">fungsi</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">y</span> <span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">x</span><span class="p">)</span>
@@ -560,41 +562,43 @@ T_{k}=T_{2^{k}}(f,{\frac {h}{2^{k}}}),  k=1,2,3,...
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;estimasi error =&quot;</span><span class="p">,</span><span class="n">hasil</span><span class="p">)</span>
 </code></pre></div>
 
-<h5 id="hasil-run">Hasil Run<a class="headerlink" href="#hasil-run" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code> RESTART: C:/Users/Nuron/Desktop/Semester_4/Komputasi Numerik/Tugas/Tugas_4/trapezoid.py 
 
-Rumus digunakan adalah = f(x) = 1/(1+x)
+<h5 id="hasil-run">Hasil Run</h5>
+<div class="codehilite"><pre><span></span><code> <span class="k">RESTART</span><span class="p">:</span> <span class="k">C</span><span class="p">:</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">Nuron</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Semester_4</span><span class="o">/</span><span class="n">Komputasi</span> <span class="n">Numerik</span><span class="o">/</span><span class="n">Tugas</span><span class="o">/</span><span class="n">Tugas_4</span><span class="o">/</span><span class="n">trapezoid</span><span class="p">.</span><span class="n">py</span> 
 
-Masukkan batas bawah  = 2
-Masukkan batas atas  = 6
-Masukkan nilai n =20
+<span class="n">Rumus</span> <span class="n">digunakan</span> <span class="n">adalah</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">x</span><span class="p">)</span>
 
-&lt;&lt;-------------Hasil penghitungan-----------------&gt;&gt;
-banyak iterasi   n       Nilai Trapezoid
-1        1       0.9523809523809523
-2        2       0.8761904761904762
-3        4       0.8547619047619047
-4        8       0.8491813741813743
-5        16          0.8477698845652135
-6        32          0.847415938934486
-7        64          0.8473273845698198
-8        128         0.8473052417171961
-9        256         0.8472997057374764
-10       512         0.8472983217258828
-11       1024        0.8472979757219435
-12       2048        0.8472978892208934
-13       4096        0.8472978675956261
-14       8192        0.8472978621893126
-15       16384       0.847297860837734
-16       32768       0.8472978604998384
-17       65536       0.8472978604153515
-18       131072          0.8472978603942459
-19       262144          0.8472978603889699
-20       524288          0.8472978603876457
-0.8472978603889699
-0.8472978603876457
-estimasi error = 1.3242740237728867e-12
+<span class="n">Masukkan</span> <span class="n">batas</span> <span class="n">bawah</span>  <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Masukkan</span> <span class="n">batas</span> <span class="n">atas</span>  <span class="o">=</span> <span class="mi">6</span>
+<span class="n">Masukkan</span> <span class="n">nilai</span> <span class="n">n</span> <span class="o">=</span><span class="mi">20</span>
+
+<span class="o">&lt;&lt;</span><span class="c1">-------------Hasil penghitungan-----------------&gt;&gt;</span>
+<span class="n">banyak</span> <span class="n">iterasi</span>   <span class="n">n</span>       <span class="n">Nilai</span> <span class="n">Trapezoid</span>
+<span class="mi">1</span>        <span class="mi">1</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">9523809523809523</span>
+<span class="mi">2</span>        <span class="mi">2</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">8761904761904762</span>
+<span class="mi">3</span>        <span class="mi">4</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">8547619047619047</span>
+<span class="mi">4</span>        <span class="mi">8</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">8491813741813743</span>
+<span class="mi">5</span>        <span class="mi">16</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">8477698845652135</span>
+<span class="mi">6</span>        <span class="mi">32</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">847415938934486</span>
+<span class="mi">7</span>        <span class="mi">64</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">8473273845698198</span>
+<span class="mi">8</span>        <span class="mi">128</span>         <span class="mi">0</span><span class="p">.</span><span class="mi">8473052417171961</span>
+<span class="mi">9</span>        <span class="mi">256</span>         <span class="mi">0</span><span class="p">.</span><span class="mi">8472997057374764</span>
+<span class="mi">10</span>       <span class="mi">512</span>         <span class="mi">0</span><span class="p">.</span><span class="mi">8472983217258828</span>
+<span class="mi">11</span>       <span class="mi">1024</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">8472979757219435</span>
+<span class="mi">12</span>       <span class="mi">2048</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">8472978892208934</span>
+<span class="mi">13</span>       <span class="mi">4096</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">8472978675956261</span>
+<span class="mi">14</span>       <span class="mi">8192</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">8472978621893126</span>
+<span class="mi">15</span>       <span class="mi">16384</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">847297860837734</span>
+<span class="mi">16</span>       <span class="mi">32768</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">8472978604998384</span>
+<span class="mi">17</span>       <span class="mi">65536</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">8472978604153515</span>
+<span class="mi">18</span>       <span class="mi">131072</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">8472978603942459</span>
+<span class="mi">19</span>       <span class="mi">262144</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">8472978603889699</span>
+<span class="mi">20</span>       <span class="mi">524288</span>          <span class="mi">0</span><span class="p">.</span><span class="mi">8472978603876457</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">8472978603889699</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">8472978603876457</span>
+<span class="n">estimasi</span> <span class="n">error</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">3242740237728867</span><span class="n">e</span><span class="o">-</span><span class="mi">12</span>
 </code></pre></div>
+
 
 <p>Terima kasih semoga bermanfaat</p>
 <script type="text/x-mathjax-config">
@@ -693,6 +697,10 @@ estimasi error = 1.3242740237728867e-12
       <script src="../assets/javascripts/application.c33a9706.js"></script>
       
       <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
   </body>
