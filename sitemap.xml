@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://github.com/zidninuron/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/zidninuron/DeretMacLaurin/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/zidninuron/METODE%20NEWTON%20RAPHSON/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/zidninuron/Metode%20Eliminasi%20Gauss/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/zidninuron/Metode%20Rekursif%20Trapezoid/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://github.com/zidninuron/Richardson%20Extrapolation/</loc>
-     <lastmod>2020-04-07</lastmod>
+     <lastmod>2020-04-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://github.com/zidninuron/Persamaan%20deferensial%20Biasa/</loc>
+     <lastmod>2020-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
