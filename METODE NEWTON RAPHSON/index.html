@@ -238,6 +238,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -423,6 +425,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Metode%20dan%20Simulasi%20Monte%20Carlo/" title="Tugas 7" class="md-nav__link">
+      Tugas 7
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -488,14 +502,14 @@
                 
                 
                 <h1 id="metode-newton-raphson"><strong><em><u>METODE NEWTON RAPHSON</u></em></strong></h1>
-<p>​       Metode Newton Raphson adalah metode pendekatan yang menggunakan satu titik awal dan mendekatinya dengan memperhatikan slope atau gradien pada titik tersebut. Titik pendekatan ke n+1 dituliskan dengan : <img alt="Screenshot (53)" src="../Screenshot%20%2853%29.png" /></p>
+<p>​       Metode Newton Raphson adalah metode pendekatan yang menggunakan satu titik awal dan mendekatinya dengan memperhatikan slope atau gradien pada titik tersebut. Titik pendekatan ke n+1 dituliskan dengan : <img alt="Screenshot (53)" src="../gambar/Screenshot%20%2853%29.png" /></p>
 <h6 id="algoritma">Algoritma</h6>
 <p>1.Definisikan fungsi f(x) dan f1(x)</p>
 <p>2.Tentukan toleransi error (e) dan iterasi maksimum(n)</p>
 <p>3.Tentukan nilai pendekatan awal x0</p>
 <p>4.Hitung f(x0) dan f1(x0)</p>
 <p>5.Untuk iterasi 1=1 s/d n atau |f(xi) e&gt;=</p>
-<p><img alt="Screenshot (53)" src="../Screenshot%20%2853%29.png" /></p>
+<p><img alt="Screenshot (53)" src="../gambar/Screenshot%20%2853%29.png" /></p>
 <p>Hitung f(xi) dan f1(xi)</p>
 <ol>
 <li>Akar perasmaan adalah nilai xi yang terakhir diperoleh.</li>
@@ -505,14 +519,14 @@
 <ol>
 <li>Metode ini tidak dapat digunakan ketika titik pendekatannya berada pada titik ekstrim atau titik puncak, karena pada titik ini nilai F^1 (x) = 0 sehingga nilai penyebut dari f(x)/f^1(x) sama dengan nol, secara grafis dapat dilihat sebagai berikut: </li>
 </ol>
-<p><img alt="Screenshot (54)" src="../Screenshot%20%2854%29.png" /></p>
+<p><img alt="Screenshot (54)" src="gambar\Screenshot (54).png" /></p>
 <p>Bila titik pendekatan berada pada titik puncak, maka titik selanjutnya akan berada di tak berhingga. </p>
 <ol>
-<li>Metode ini menjadi sulit atau lama mendapatkan penyelesaian ketika titik pendekatannya berada di antara dua titik stasioner. <img alt="Screenshot (55)" src="../Screenshot%20%2855%29.png" /></li>
+<li>Metode ini menjadi sulit atau lama mendapatkan penyelesaian ketika titik pendekatannya berada di antara dua titik stasioner. <img alt="Screenshot (55)" src="gambar\Screenshot (55).png" /></li>
 </ol>
 <p>​        Bila titik pendekatan berada pada dua tiitik puncak akan dapat mengakibatkan hilangnya penyelesaian (divergensi). Hal ini disebabkan titik selanjutnya berada pada salah satu titik puncak atau arah pendekatannya berbeda. Untuk dapat menyelesaikan kedua permasalahan pada metode Newton Raphson ini, maka metode Newton Raphson perlu dimodifikasi dengan : </p>
 <ol>
-<li>Bila titik pendekatan berada pada titik puncak maka titik pendekatan tersebut harus di geser sedikit,  <img alt="Screenshot (56)" src="../Screenshot%20%2856%29.png" />dimana δadalah konstanta yang ditentukan dengan demikian<img alt="Screenshot (57)" src="../Screenshot%20%2857%29.png" /> dan metode Newton Raphson tetap dapat berjalan</li>
+<li>Bila titik pendekatan berada pada titik puncak maka titik pendekatan tersebut harus di geser sedikit,  <img alt="Screenshot (56)" src="gambar\Screenshot (56).png" />dimana δadalah konstanta yang ditentukan dengan demikian<img alt="Screenshot (57)" src="gambar\Screenshot (57).png" /> dan metode Newton Raphson tetap dapat berjalan</li>
 <li>Untuk menghindari titik-titik pendekatan yang berada jauh, sebaiknya pemakaian metode Newton Raphson ini didahului oleh metode tabel, sehingga dapat di jamin konvergensi dari metode Newton Raphson.</li>
 </ol>
 <h6 id="contoh-program">Contoh Program</h6>

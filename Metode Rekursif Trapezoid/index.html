@@ -238,6 +238,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -424,6 +426,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Metode%20dan%20Simulasi%20Monte%20Carlo/" title="Tugas 7" class="md-nav__link">
+      Tugas 7
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -490,14 +504,14 @@
                 
                 
                 <h1 id="metode-rekursif-trapezoid"><strong><em><u>Metode Rekursif Trapezoid</u></em></strong></h1>
-<p>Metode rekursif trapezoid merupakan suatu metode pengintegralan dalam analisis numerik.di dalam Kalkulus, integral tentu didefinisikan sebagai sebuah limit jumlah Riemann.Selanjutnya,menurut Teorema Dasar Kalkulus integral tersebut dapat dihitung dengan rumus,<img alt="Screenshot (68)" src="../Screenshot%20%2868%29.png" /></p>
+<p>Metode rekursif trapezoid merupakan suatu metode pengintegralan dalam analisis numerik.di dalam Kalkulus, integral tentu didefinisikan sebagai sebuah limit jumlah Riemann.Selanjutnya,menurut Teorema Dasar Kalkulus integral tersebut dapat dihitung dengan rumus,<img alt="Screenshot (68)" src="gambar\Screenshot (68).png" /></p>
 <p>Dengan <em>F(x)</em> adalah antiderivatif  <em>f(x)</em> (yakni <em>F’(x)=f(x)</em>).</p>
 <p>​   Banyak integral tentu yang dapat dihitung dengan rumus tesebut, namun demikian, tidak sedikit integral tentu yang tidak dapat dihitung dengan rumus di atas, hal itu dikarenakan integran <em>f(x)</em>tidak mempunyai antiderivatif yang dapat dinyatakan dalam fungsi-fungsi elementer. Dalam hal ini perhitungan yang dapat dilakukan adalah secara numerik.</p>
 <p>​   Integrasi numerik merupakan suatu alat utama yang digunakan para ilmuwan untuk mendapatkan nilai-nilai hampiran untuk integral tentu yang tidak dapat diselesaikan secara analitik. Dalam mendapatkan nilai-nilai hampiran integral tentu, digunakan banyak metode, salah satu metode yang dapat digunakan adalah Aturan Trapesium Rekursif. Berikut akan dijelaskan penghitungan integral tentu menggunakan Aturan Trapesium Rekursif.</p>
 <h5 id="aturan-metode-rekursif-trapezoid">Aturan Metode Rekursif Trapezoid</h5>
-<p>Misalkan  <strong>f</strong> adalah suatu fungsi yang terdefinisi pada  <strong>[a,b]</strong> . Misalkan <img alt="Screenshot (70)" src="../Screenshot%20%2870%29.png" /> suatu partisi sedemikian sehingga dengan <strong>xk = xo +kh</strong> dengan <strong>h= (b - a)/n</strong> untuk <strong>k=0,1,2,3,...n</strong>. Perhatikan aturan trapesium untuk fungsi  <strong>f</strong> terhadap partisi di atas (untuk keperluan pembahasan pada bagian ini, kita gunakan notasi kuadratur dengan menyertakan cacah dan lebar subinterval),<img alt="Screenshot (71)" src="../Screenshot%20%2871%29.png" /></p>
+<p>Misalkan  <strong>f</strong> adalah suatu fungsi yang terdefinisi pada  <strong>[a,b]</strong> . Misalkan <img alt="Screenshot (70)" src="../gambar/Screenshot%20%2870%29.png" /> suatu partisi sedemikian sehingga dengan <strong>xk = xo +kh</strong> dengan <strong>h= (b - a)/n</strong> untuk <strong>k=0,1,2,3,...n</strong>. Perhatikan aturan trapesium untuk fungsi  <strong>f</strong> terhadap partisi di atas (untuk keperluan pembahasan pada bagian ini, kita gunakan notasi kuadratur dengan menyertakan cacah dan lebar subinterval),<img alt="Screenshot (71)" src="../gambar/Screenshot%20%2871%29.png" /></p>
 <p>Jika lebar setiap subinterval diperkecil separonya, maka didapat</p>
-<p><img alt="Screenshot (72)" src="../Screenshot%20%2872%29.png" /></p>
+<p><img alt="Screenshot (72)" src="../gambar/Screenshot%20%2872%29.png" /></p>
 <p>Pada (1) berlaku  f_{k}=f(x_{0}+kh) sedangkan pada (2) berlaku f_{k}=f(x_{0}+kh/2 sehingga f_{2k} pada (2) sama dengan  f_{k} pada (1). Rumus (3) disebut rumus trapesium rekursif. Rumus ini memungkinkan penggunaan aturan trapesium majemuk secara efisien, tanpa harus menghitung ulang nilai-nilai fungsi di beberapa absis yang sudah dihitung sebelumnya. Untuk h=(b-a) dan  n=1,2,4,8,16.......} atau</p>
 <div>
 <div class="MathJax_Preview">
@@ -535,12 +549,12 @@ T_{k}=T_{2^{k}}(f,{\frac {h}{2^{k}}}),  k=1,2,3,...
 </script>
 </div>
 <p>yang memenuhi hubungan</p>
-<p><img alt="Screenshot (73)" src="../Screenshot%20%2873%29.png" /></p>
-<p>dengan <img alt="Screenshot (74)" src="../Screenshot%20%2874%29.png" /></p>
+<p><img alt="Screenshot (73)" src="../gambar/Screenshot%20%2873%29.png" /></p>
+<p>dengan <img alt="Screenshot (74)" src="../gambar/Screenshot%20%2874%29.png" /></p>
 <h5 id="langkang-langkah-metode-rekursif-trapezoid">Langkang-langkah Metode Rekursif Trapezoid</h5>
 <p>Dalam menghitung hampiran </p>
-<p><img alt="img" src="/clip_image002.png" /></p>
-<p>dengan aturan trapesium rekursif, kita lakukan langkah-langkah sebagai berikut;<img alt="Screenshot (75)" src="../Screenshot%20%2875%29.png" /></p>
+<p><img alt="img" src="../gambar/clip_image002.png" /></p>
+<p>dengan aturan trapesium rekursif, kita lakukan langkah-langkah sebagai berikut;<img alt="Screenshot (75)" src="../gambar/Screenshot%20%2875%29.png" /></p>
 <h5 id="program">Program</h5>
 <div class="codehilite"><pre><span></span><code><span class="c1">#mendefinisikan fungsi</span>
 <span class="k">def</span> <span class="nf">fungsi</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span>

@@ -238,6 +238,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -424,6 +426,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Metode%20dan%20Simulasi%20Monte%20Carlo/" title="Tugas 7" class="md-nav__link">
+      Tugas 7
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -495,7 +509,7 @@
 <ol>
 <li>Penambahan Matrik sebelah kiri diubah menjadi matrik diagonal</li>
 </ol>
-<p><img alt="gambar" src="../gambar.png" /></p>
+<p><img alt="gambar" src="../gambar/gambar.png" /></p>
 <ol>
 <li>
 <p>Penyelesaian dari persamaan linier simultan diatas adalah nilai d1,d2,d3,…,dn dan atau x1 = d1,x2 = d2,x3=d3,….,xn=dn</p>
@@ -509,9 +523,9 @@
 </ol>
 <h5 id="contoh">Contoh</h5>
 <p>•Selesaikan sistem persamaan :</p>
-<p><img alt="Picture1" src="../Picture1.png" /></p>
-<p><img alt="Picture2" src="../Picture2.png" /></p>
-<p><img alt="Picture3" src="../Picture3.png" /></p>
+<p><img alt="Picture1" src="../gambar/Picture1.png" /></p>
+<p><img alt="Picture2" src="../gambar/Picture2.png" /></p>
+<p><img alt="Picture3" src="../gambar/Picture3.png" /></p>
 <h5 id="program"><strong>Program</strong></h5>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
@@ -591,7 +605,7 @@
 <p>× = D  ̄ ¹[b-( L + U )×⁽ᵏ⁾] </p>
 <p>Jika ditulis dalam aturan iteratif, maka metode Jacobi dapat ditulis sebagai:</p>
 <p>×⁽ᵏ⁺¹⁾ = D  ̄¹[b-( L + U )×⁽ᵏ⁾]</p>
-<p>di mana k merupakan banyaknya iterasi. Jika ×⁽ᵏ⁾ menyatakan hampiran ke-k penyelesaian SPL, maka ×⁽⁰⁾ adalah hampiran awal.<img alt="Screenshot (62)" src="../Screenshot%20%2862%29.png" /></p>
+<p>di mana k merupakan banyaknya iterasi. Jika ×⁽ᵏ⁾ menyatakan hampiran ke-k penyelesaian SPL, maka ×⁽⁰⁾ adalah hampiran awal.<img alt="Screenshot (62)" src="../gambar/Screenshot%20%2862%29.png" /></p>
 <h2 id="algoritme-metode-jacobi">Algoritme Metode Jacobi</h2>
 <p>INPUT :</p>
 <p><em>n</em>, A, b, dan hampiran awal <strong>Y</strong>=(y1 y2 y3…yn)T , batas toleransi T, dan maksimum iterasi N</p>
@@ -599,7 +613,7 @@
 <p>ꓫ=(x₁ x₂ x₃……xn)ᵀ, vektor galat hampiran <em>g</em>, dan <em>H</em> yang merupakan matriks dengan baris vektor-vektor hampiran selama iterasi.</p>
 <ol>
 <li>Set penghitung iterasi k=1</li>
-<li>WHILE <em>k</em> &lt; = <em>N</em> DO<img alt="Screenshot (63)" src="../Screenshot%20%2863%29.png" /></li>
+<li>WHILE <em>k</em> &lt; = <em>N</em> DO<img alt="Screenshot (63)" src="../gambar/Screenshot%20%2863%29.png" /></li>
 <li>FOR <em>i</em> = 1,2,3,…,<em>n</em>, Hitung </li>
 <li>SET ꓫ=(x₁ x₂ x₃……xn)ᵀ</li>
 <li>IF ||X_Y||&lt;T THEN STOP</li>
@@ -705,12 +719,12 @@
 <h1 id="gauss-seidel"><strong><em><u>Gauss Seidel</u></em></strong></h1>
 <p>​       Eliminasi Gauss seidel adalah metode yang menggunakan proses iterasi hingga diperoleh nilai nilai yang berubah.</p>
 <p>Bilai diketahui peramaan linier simultan:</p>
-<p><img alt="Screenshot (64)" src="../Screenshot%20%2864%29.png" /></p>
+<p><img alt="Screenshot (64)" src="../gambar/Screenshot%20%2864%29.png" /></p>
 <h5 id="konsep-metode-gauss-seidel">Konsep Metode Gauss Seidel</h5>
 <ol>
 <li>Hitung nilai xi untuk (i = 1 s/d n)</li>
 </ol>
-<h5 id="_1"><img alt="Screenshot (65)" src="../Screenshot%20%2865%29.png" /></h5>
+<h5 id="_1"><img alt="Screenshot (65)" src="../gambar/Screenshot%20%2865%29.png" /></h5>
 <ol>
 <li>proses iterasi dihentikan apabila bila selisih nilai xi (i = 1 s/d n ) dengan nilai xi pada iterasi sebelumnya kurang dari nilai toleransi error yang ditentukan</li>
 </ol>
@@ -721,12 +735,12 @@
 <li>tentukkan toleransi error.</li>
 <li>tentukan nilai awal dari xi, untuk i =1 s/d n</li>
 <li>simpan xi dalam si, untuk i=1 s/d n</li>
-<li>untuk i=1 s/d n hitung<img alt="Screenshot (66)" src="../Screenshot%20%2866%29.png" /></li>
+<li>untuk i=1 s/d n hitung<img alt="Screenshot (66)" src="../gambar/Screenshot%20%2866%29.png" /></li>
 <li>iterasi &lt;- iterasi +1</li>
 <li>bila iterasi lebih dari max_iter atau tidak terdapat ei&lt;ϵ untuk i=1 s/d n maka proses dihentikan dari penyelesaianya adalah xi untuk i=1 s/d n. Bila tidak maka ulangi langkah (5).</li>
 </ol>
 <h5 id="contoh_1">contoh</h5>
-<h5 id="_2"><img alt="Screenshot (67)" src="../Screenshot%20%2867%29.png" /></h5>
+<h5 id="_2"><img alt="Screenshot (67)" src="../gambar/Screenshot%20%2867%29.png" /></h5>
 <h5 id="_3"></h5>
 <h5 id="program_2">Program</h5>
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="p">,</span><span class="n">b</span><span class="p">):</span> 
@@ -876,15 +890,14 @@
 </code></pre></div>
 
 
-<p>```html</p>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {inlineMath: [['$$','$$']]}
-});
-</script>
-
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="p">&gt;</span>
+<span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+<span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span><span class="s1">&#39;$$&#39;</span><span class="p">]]}</span>
+<span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
                 
                   
                 
